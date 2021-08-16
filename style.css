@@ -49,15 +49,20 @@ main {
     padding-bottom: 61px;
 }
 
-a {
+#esqueci {
     grid-row-start: 5;
     grid-column-start: 2;
     margin: 0 150px 0 0;
+
+
+
+}
+
+a {
     color: #4AD395;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-
 }
 
 a:hover {
@@ -298,7 +303,7 @@ label {
 .conteiner3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 896px;
     height: 835px;
     align-items: center;
@@ -369,7 +374,9 @@ label {
 }
 
 #cadastrar {
-
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
     width: 271px;
     height: 49px;
     color: #FFFFFF;
@@ -391,7 +398,7 @@ label {
 
 #cadastro1 {
 
-
+    grid-row-start: 2;
     width: 199px;
     height: 49px;
     background: rgba(229, 229, 229, 0.65);
@@ -426,7 +433,21 @@ label {
 }
 
 .termo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
+
+
+}
+
+.texto>p {
+    margin: 0;
+}
+
+.termo>a {
+    margin: 0;
 }
