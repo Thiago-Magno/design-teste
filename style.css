@@ -11,6 +11,7 @@ main {
     width: 100vw;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #E5E5E5;
     border: 000 solid 1px;
 }
@@ -19,22 +20,71 @@ main {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 80vh;
-    width: 80vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 896px;
+    height: 626px;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     flex-direction: column;
     margin: 189px 272px 209px 272px;
-    border: solid 1px cyan;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 
 #cadastro {
     grid-column-start: 1;
     grid-column-end: 1;
+    grid-row-start: 2;
+    width: 199px;
+    height: 49px;
 }
 
 #ja-cadastrado {
     grid-column-start: 2;
     grid-column-end: 2;
+    grid-row-start: 2;
+    width: 199px;
+    height: 49px;
+    color: #FFFFFF;
+    background: #4AD395;
+    border: 1px solid #4AD395;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#usuario {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    width: 418px;
+    height: 49px;
+}
+
+#senha {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    width: 418px;
+    height: 49px;
+}
+
+a {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    margin: 0 140px 0 0;
+
+}
+
+#login {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    width: 271px;
+    height: 49px;
+    color: #FFFFFF;
+    background: #4AD395;
+    border: 1px solid #4AD395;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
