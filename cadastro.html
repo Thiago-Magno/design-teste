@@ -14,19 +14,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
 </head>
 
 <body>
-    <main>
-        <div class="conteiner">
-            <img src="./images/apple (1) 1.svg" alt="logo-aplle" id="logo" />
+    <main id="diff">
+        <div class="conteiner3">
+            <img src="./images/apple (1) 1.svg" alt="logo-aplle" id="logo1" />
+
+            <div class="buttons">
+                <button id="cadastro1" class="button">Cadastre-se</button>
+                <button id="ja-cadastrado1" class="button">Já tenho cadastro</button>
+            </div>
+            <div class="campos" id="nome">
+                <img src="./images/user.svg" alt="icon-senha" class="input-icon" />
+                <input type="text" placeholder="Seu nome" name="senha" class="campo" />
+            </div>
+            <div class="campos" id="phone">
+                <img src="./images/phone.svg" alt="icon-senha" class="input-icon" />
+                <input type="text" placeholder="Seu numero de celular" name="telefone" data-mask="(00) 0000-0000"
+                    data-mask-selectonfocus="true" class="campo" />
+            </div>
+            <div class="campos" id="email">
+                <img src="./images/mail.svg" alt="icon-senha" class="input-icon" />
+                <input type="text" placeholder="Seu e-mail" name="senha" class="campo" />
+            </div>
+            <div class="senha" id="senha1">
+                <img src="./images/senha.svg" alt="icon-senha" class="input-icon" />
+                <input type="password" placeholder="Digite sua senha novamente" name="senha" id="senha-campo" />
+                <img src="./images/view-senha.svg" alt="icon-view" id="viewer-novs" />
+            </div>
+            <div class="senha2" id="senha2">
+                <img src="./images/senha.svg" alt="icon-senha" class="input-icon" />
+                <input type="password" placeholder="Digite uma senha forte" name="senha" id="senha-campo" />
+                <img src="./images/view-senha.svg" alt="icon-view" id="viewer-novs" />
+            </div>
+            <div class="termo">
+                <input type="checkbox" name="sa" id="concordo" />
+                <div class="texto"></div>
+                Declaro que li e concordo com os<a href=""> termos de uso</a> , e a
+                <a href="">politica de privacidade</a>
+            </div>
+        </div>
+        <input type="Submit" value="Finalizar cadastro" id="cadastrar" class="button" />
+
+
 
         </div>
-
     </main>
-
-
 </body>
 
 </html>
