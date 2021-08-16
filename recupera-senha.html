@@ -14,19 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <div class="conteiner">
             <img src="./images/apple (1) 1.svg" alt="logo-aplle" id="logo" />
+            <div class="text">
+                <h1>Digite seu e-mail de cadastro</h1>
+                <p> Voce receberá, no seu e-mail, o link para redefinir a sua senha</p>
+            </div>
+            <div class="usuario">
+                <img src="./images/mail.svg" alt="icon-email" class="input-icon" />
+                <input type="text" placeholder="Digite o seu e-mail cadastrado" name="usuario" id="email-campo" />
+            </div>
 
+            <form class="button-rec" action="./index.html" method="get">
+                <button id="voltar">Voltar</button>
+            </form>
+            <form class="button-rec" action="./nova-senha.html" method="get">
+                <button id="envia">Enviar</button>
+            </form>
         </div>
-
     </main>
-
-
 </body>
 
 </html>

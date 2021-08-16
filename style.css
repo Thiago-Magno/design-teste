@@ -7,6 +7,7 @@ body {
 
 * {
     font-family: montserrat;
+    font-size: 16px;
 }
 
 main {
@@ -117,10 +118,15 @@ a:hover {
     margin-left: 160px;
 }
 
+
+
 /*Campos=========================================  */
 #senha-campo {
     border: none;
     outline-style: none;
+    width: 50%;
+    font-size: 13px;
+    opacity: 80%;
 
 }
 
@@ -174,4 +180,99 @@ a:hover {
     height: 20px;
     width: 16px;
     padding-right: 10px;
+}
+
+/* configs recupera-senha  */
+
+#email-campo {
+    border: none;
+    outline-style: none;
+    width: 90%;
+}
+
+.button-rec {
+
+    grid-row-start: 4;
+}
+
+#envia {
+    width: 197px;
+    height: 49px;
+    color: #FFFFFF;
+    background: #4AD395;
+    border: 1px solid #4AD395;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 220px;
+}
+
+#voltar {
+    width: 199px;
+    height: 49px;
+    background: rgba(229, 229, 229, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #777777;
+    margin-left: 220px;
+
+    font-weight: 400;
+}
+
+/* Text configs */
+.text {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+
+}
+
+.text>p {
+    font-weight: 400;
+    color: #777777;
+
+}
+
+.text>h1 {
+    font-family: montserrat;
+    font-weight: 600;
+    color: #777777;
+}
+
+/* Config nova-senha */
+.senha2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    width: 418px;
+    height: 49px;
+    color: #777777;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(119, 119, 119, 0.3);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 19px;
+    font-weight: 400;
+
+}
+
+/* coloca os icone de ver a senha no local certo e não corta 
+a descrição dentro dos campos */
+#viewer-novs {
+    padding-left: 130px;
+}
+
+label {
+    color: #777777;
+    font-weight: 600;
+    padding-left: 200px;
+
 }
