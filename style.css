@@ -5,6 +5,10 @@ body {
 
 }
 
+* {
+    font-family: montserrat;
+}
+
 main {
     display: flex;
     height: 100vh;
@@ -40,6 +44,37 @@ main {
     padding-bottom: 61px;
 }
 
+a {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    margin: 0 150px 0 0;
+    color: #4AD395;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+a:hover {
+    color: #318f65;
+}
+
+/* botoes=============================== */
+#login {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    width: 271px;
+    height: 49px;
+    color: #FFFFFF;
+    background: #4AD395;
+    border: 1px solid #4AD395;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 129px;
+    font-weight: 600;
+}
+
 #cadastro {
 
     grid-column-start: 1;
@@ -54,6 +89,7 @@ main {
     color: #777777;
     margin-left: 220px;
     margin-bottom: 44px;
+    font-weight: 400;
 }
 
 #ja-cadastrado {
@@ -70,9 +106,35 @@ main {
     border-radius: 5px;
     margin-right: 220px;
     margin-bottom: 44px;
+    font-weight: 600;
 }
 
-#usuario {
+.button:hover {
+    opacity: 80%;
+}
+
+#viewer {
+    margin-left: 160px;
+}
+
+/*Campos=========================================  */
+#senha-campo {
+    border: none;
+    outline-style: none;
+
+}
+
+#user-campo {
+    border: none;
+    outline-style: none;
+
+}
+
+.usuario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -83,10 +145,16 @@ main {
     background: rgba(255, 255, 255, 0.65);
     border: 1px solid #4AD395;
     box-sizing: border-box;
-    border-radius: 5px
+    border-radius: 5px;
+    padding-left: 19px;
+    font-weight: 400;
 }
 
-#senha {
+.senha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -97,27 +165,13 @@ main {
     border: 1px solid rgba(119, 119, 119, 0.3);
     box-sizing: border-box;
     border-radius: 5px;
-}
-
-a {
-    grid-row-start: 5;
-    grid-column-start: 2;
-    margin: 0 140px 0 0;
-    color: #4AD395;
-    text-decoration: none;
+    padding-left: 19px;
+    font-weight: 400;
 
 }
 
-#login {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 6;
-    width: 271px;
-    height: 49px;
-    color: #FFFFFF;
-    background: #4AD395;
-    border: 1px solid #4AD395;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin-bottom: 129px;
+.input-icon {
+    height: 20px;
+    width: 16px;
+    padding-right: 10px;
 }

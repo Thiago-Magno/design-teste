@@ -3,28 +3,41 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <main>
         <div class="conteiner">
-            <img src="./images/apple (1) 1.svg" alt="logo-aplle" id="logo">
-            <input type="button" value="Cadastre-se" id="cadastro">
-            <input type="button" value="Já tenho cadastro" id="ja-cadastrado">
-            <input type="text" placeholder="admin@dietsystem.com" name="usuario" id="usuario">
-            <input type="text" placeholder="Digite a sua senha" name="senha" id="senha">
+            <img src="./images/apple (1) 1.svg" alt="logo-aplle" id="logo" />
+            <input type="button" value="Cadastre-se" id="cadastro" class="button" />
+            <input type="button" value="Já tenho cadastro" id="ja-cadastrado" class="button" />
+            <div class="usuario">
+                <img src="./images/mail.svg" alt="icon-email" class="input-icon" />
+                <input type="text" placeholder="admin@dietsystem.com" name="usuario" id="user-campo" />
+            </div>
+            <div class="senha">
+                <img src="./images/senha.svg" alt="icon-senha" class="input-icon" />
+                <input type="password" placeholder="Digite a sua senha" name="senha" id="senha-campo" />
+                <input type="checkbox" name="" id="viewer" onclick="showFunction()" />
+            </div>
             <a href="">Esqueceu a senha?</a>
-            <input type="button" value="Entrar" id="login">
-
-
+            <input type="Submit" value="Entrar" id="login" class="button" />
         </div>
     </main>
+    <script>
+
+    </script>
 
 </body>
 
